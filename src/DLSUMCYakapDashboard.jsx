@@ -282,12 +282,12 @@ const pillars = [
 ];
 
 const immediateActions = [
-  { week: "This week", action: "Approve appointment of YAKAP Accreditation Coordinator", owner: "Hospital Director" },
-  { week: "This week", action: "Direct IT to initiate EMR vendor evaluation; internal decision by Mar 25", owner: "Director + CIO" },
+  { week: "Week 1", action: "Approve appointment of YAKAP Accreditation Coordinator", owner: "Hospital Director" },
+  { week: "Week 1", action: "Direct IT to initiate EMR vendor evaluation; internal decision By Week 4", owner: "Director + CIO" },
   { week: "Weeks 1–2", action: "Audit all license and LTO expiration dates", owner: "Compliance Officer" },
   { week: "Weeks 2–3", action: "Approve budget line for EMR, facility upgrades, staff training", owner: "Director + CFO" },
   { week: "Week 3", action: "Sign and notarize Performance Commitment after Legal Office review", owner: "Hospital Director" },
-  { week: "By Mar 25", action: "Formally declare EMR provider to PhilHealth prior to April 1 deadline", owner: "YAKAP Coord. + IT" },
+  { week: "By Week 4", action: "Formally declare EMR provider to PhilHealth prior to April 1 deadline", owner: "YAKAP Coord. + IT" },
   { week: "Weeks 4–6", action: "Complete all Annex documents; submit accreditation package", owner: "YAKAP Coordinator" },
   { week: "Weeks 9–14", action: "On-site validation preparation; staff training; mock inspection", owner: "YAKAP Coord. + QMD" },
   { week: "Post-approval", action: "Activate empanelment; submit GAMOT physician nominations (PA 2026-0009)", owner: "YAKAP Coordinator" },
@@ -619,7 +619,7 @@ function ExecutiveDashboard() {
         <div style={{ border: `1px solid ${T.border}` }}>
           {immediateActions.map((a, i) => (
             <div key={i} style={{ display: "grid", gridTemplateColumns: "120px 1fr 160px", borderBottom: i < immediateActions.length - 1 ? `1px solid ${T.border}` : "none", padding: "10px 14px", alignItems: "center", gap: 12, background: i % 2 === 0 ? T.bg : T.surface }}>
-              <span style={{ fontFamily: "monospace", fontSize: 10, fontWeight: 700, color: a.week === "By Mar 25" || a.week === "This week" ? T.black : T.inkMuted, letterSpacing: "0.06em" }}>{a.week}</span>
+              <span style={{ fontFamily: "monospace", fontSize: 10, fontWeight: 700, color: a.week === "By Week 4" || a.week === "This week" ? T.black : T.inkMuted, letterSpacing: "0.06em" }}>{a.week}</span>
               <span style={{ fontFamily: "sans-serif", fontSize: 12, color: T.ink, lineHeight: 1.4 }}>{a.action}</span>
               <span style={{ fontFamily: "monospace", fontSize: 10, color: T.inkMuted, textAlign: "right" }}>{a.owner}</span>
             </div>
