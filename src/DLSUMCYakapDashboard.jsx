@@ -283,7 +283,7 @@ const pillars = [
 
 const immediateActions = [
   { week: "Week 1", action: "Approve appointment of YAKAP Accreditation Coordinator", owner: "Hospital Director" },
-  { week: "Week 1", action: "Direct IT to initiate EMR vendor evaluation; internal decision By Week 4", owner: "Director + CIO" },
+  { week: "Week 1", action: "Direct IT to initiate EMR vendor evaluation; internal decision by Week 4", owner: "Director + CIO" },
   { week: "Weeks 1–2", action: "Audit all license and LTO expiration dates", owner: "Compliance Officer" },
   { week: "Weeks 2–3", action: "Approve budget line for EMR, facility upgrades, staff training", owner: "Director + CFO" },
   { week: "Week 3", action: "Sign and notarize Performance Commitment after Legal Office review", owner: "Hospital Director" },
